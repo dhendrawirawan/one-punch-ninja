@@ -1143,6 +1143,3 @@ GenosPoster.setScale(0.4, ScaleAnchor.Middle)
 GenosPoster.setPosition(-400, 200)
 GenosPoster.setVelocity(20, -1)
 GenosPoster.ay = -0.5
-forever(function () {
-	
-})
