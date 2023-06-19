@@ -1,7 +1,12 @@
-function PlayMusic () {
-	
-}
-effects.confetti.startScreenEffect(10000)
+const op12 = new music.Melody("@10,120,80,80 ~1 b2:6-240 c#3 d:4 r g f# d e:6 g:6 f#:4 r e d r b2:6 c#3 d:4 r g f# d e-320 r g r f#-240 r r g3-240 r f# r r d e e d e f# g a f# e r r r d r f# r d r d d c# b2 c#3 e d r g3-240 r f# r r d e e r d a a a a a g r f# e r f# d r r r r d4 d d d d r g3-240 r f# r r d e e d e f# g a f# e r r r d r f# r d r d d c# b2 c#3 e d r g3-240 r f# r r d e e r d a a a a a g r f# e r f# d r r r r r a a a a r a r b2-300 r c#3 r d-240 r g f# d e-320 r g r f#-240 r e d r b2-320 r c#3 r d-240 r g f# d e-320 r g r f#-240 r a a#")
+const op13 = new music.Melody("@10,75,0,0 ~4 c-240 r r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c-240 r d r c r d r c r d r c r d r c-240 r d r c r d r c r d r c r d r ")
+const op14 = new music.Melody("@10,0,20,80 ~5 c-240 r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c r d r c-240 r d r c r d r c r d r c r d r c-240 r d r c r d r c r d r c r d r ")
+const op15 = new music.Melody("@100,100,100,80 ~14 b3:16-240 f# g a b3 f# g a b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3 g d4 a3 b3:16-240 f# g a b3 f# g a")
+op12.play(255)
+op13.play(145)
+op14.play(100)
+op15.play(40)
+effects.confetti.startScreenEffect(30000)
 // Image generated using png converter to JS.  https://kristianpedersen.github.io/Convert-Image-to-MakeCode-Arcade-Sprite/
 let SaitamaPunch = sprites.create(img`
     ...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
@@ -730,8 +735,8 @@ let SaitamaPoster = sprites.create(img`
     `, SpriteKind.Player)
 SaitamaPoster.setScale(0.75, ScaleAnchor.Top)
 SaitamaPoster.setPosition(320, 160)
-SaitamaPoster.setVelocity(-50, -5)
-SaitamaPoster.ay = -5
+SaitamaPoster.setVelocity(-25, -2)
+SaitamaPoster.ay = -1
 let GenosPoster = sprites.create(img`
     .......................................................................11111111111dbbbbd11dddddddd........................................................................................ffcc411111deeebb4bbbbbbeeeeeeeeeedd4eeecfc11..........................................................................................................................................................................................................................................................................................
     .......................................................................11111bcffffffffffcd11dddddd........................................................................................ffccb11111beeebbbb4b4bebeeeeeeeee44eeeecfc11..........................................................................................................................................................................................................................................................................................
@@ -1136,8 +1141,8 @@ let GenosPoster = sprites.create(img`
     `, SpriteKind.Player)
 GenosPoster.setScale(0.4, ScaleAnchor.Middle)
 GenosPoster.setPosition(-400, 200)
-GenosPoster.setVelocity(50, -5)
-GenosPoster.ay = -2
+GenosPoster.setVelocity(20, -1)
+GenosPoster.ay = -0.5
 forever(function () {
 	
 })
